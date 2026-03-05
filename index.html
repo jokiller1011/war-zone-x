@@ -7,6 +7,14 @@
 <body>
   <h1>War‑Zone‑X</h1>
   <button id="login">Login</button>
-  <script src="js/supabase.js"></script>
+  <script src="js/supabase.js"
+  
+  const status = document.createElement("div");
+  document.body.appendChild(status);
+
+  const ws = new WebSocket("wss://war-zone-x.onrender.com");
+  ws.onopen = () => status.textContent = "WebSocket connected ✅";
+  ws.onerror = () => status.textContent = "WebSocket blocked ❌";
+</script>
 </body>
 </html>
