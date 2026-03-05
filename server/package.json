@@ -1,0 +1,7 @@
+{
+  "name": "war-zone-x-server",
+  "type": "module",
+  "dependencies": {
+    "ws": "^8.16.0"
+  }
+}
